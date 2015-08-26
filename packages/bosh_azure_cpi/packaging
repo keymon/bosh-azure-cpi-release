@@ -10,7 +10,7 @@ export GEM_HOME=${BOSH_INSTALL_TARGET}/gem_home
 cd bosh_azure_cpi
 
 cat >> Gemfile <<EOF
-gem 'bosh_azure_cpi'
+gem 'bosh_azure_cpi', :git => 'https://github.com/Azure/bosh_azure_cpi'
 EOF
 
 # force bundler to use a clean config
